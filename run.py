@@ -44,8 +44,8 @@ def main():
                     # Faker found!
                     is_faker = True
             
-            if reply.snippet.textOriginal == NOTIFY_MESSAGE:
-                has_already_been_informed = True
+                    if reply.snippet.textOriginal == NOTIFY_MESSAGE:
+                        has_already_been_informed = True
         
         if is_faker and not has_already_been_informed:
             video_id = comment.snippet.videoId
